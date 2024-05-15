@@ -1,0 +1,225 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "title": "Root Schema",
+  "type": "object",
+  "default": {},
+  "required": [
+    "id",
+    "periodoDe",
+    "periodoAte",
+    "restaurante",
+    "mesa",
+    "usuario"
+  ],
+  "properties": {
+    "id": {
+      "title": "The id Schema",
+      "type": "integer",
+      "default": 0
+    },
+    "periodoDe": {
+      "title": "The periodoDe Schema",
+      "type": "string",
+      "default": ""
+    },
+    "periodoAte": {
+      "title": "The periodoAte Schema",
+      "type": "string",
+      "default": ""
+    },
+    "restaurante": {
+      "title": "The restaurante Schema",
+      "type": "object",
+      "default": {},
+      "required": [
+        "id",
+        "nome",
+        "localizacao",
+        "tipoCozinha",
+        "horarioAbertura",
+        "horarioFechamento",
+        "qntdMesas",
+        "lotacaoAtual"
+      ],
+      "properties": {
+        "id": {
+          "title": "The id Schema",
+          "type": "integer",
+          "default": 0
+        },
+        "nome": {
+          "title": "The nome Schema",
+          "type": "string",
+          "default": ""
+        },
+        "localizacao": {
+          "title": "The localizacao Schema",
+          "type": "string",
+          "default": ""
+        },
+        "tipoCozinha": {
+          "title": "The tipoCozinha Schema",
+          "type": "string",
+          "default": ""
+        },
+        "horarioAbertura": {
+          "title": "The horarioAbertura Schema",
+          "type": "string",
+          "default": ""
+        },
+        "horarioFechamento": {
+          "title": "The horarioFechamento Schema",
+          "type": "string",
+          "default": ""
+        },
+        "qntdMesas": {
+          "title": "The qntdMesas Schema",
+          "type": "integer",
+          "default": 0
+        },
+        "lotacaoAtual": {
+          "title": "The lotacaoAtual Schema",
+          "type": "integer",
+          "default": 0
+        }
+      }
+    },
+    "mesa": {
+      "title": "The mesa Schema",
+      "type": "object",
+      "default": {},
+      "required": [
+        "id",
+        "numero",
+        "status",
+        "restaurante",
+        "periodoDe",
+        "periodoAte"
+      ],
+      "properties": {
+        "id": {
+          "title": "The id Schema",
+          "type": "integer",
+          "default": 0
+        },
+        "numero": {
+          "title": "The numero Schema",
+          "type": "integer",
+          "default": 0
+        },
+        "status": {
+          "title": "The status Schema",
+          "type": "string",
+          "default": ""
+        },
+        "restaurante": {
+          "title": "The restaurante Schema",
+          "type": "object",
+          "default": {},
+          "required": [
+            "id",
+            "nome",
+            "localizacao",
+            "tipoCozinha",
+            "horarioAbertura",
+            "horarioFechamento",
+            "qntdMesas",
+            "lotacaoAtual"
+          ],
+          "properties": {
+            "id": {
+              "title": "The id Schema",
+              "type": "integer",
+              "default": 0
+            },
+            "nome": {
+              "title": "The nome Schema",
+              "type": "string",
+              "default": ""
+            },
+            "localizacao": {
+              "title": "The localizacao Schema",
+              "type": "string",
+              "default": ""
+            },
+            "tipoCozinha": {
+              "title": "The tipoCozinha Schema",
+              "type": "string",
+              "default": ""
+            },
+            "horarioAbertura": {
+              "title": "The horarioAbertura Schema",
+              "type": "string",
+              "default": ""
+            },
+            "horarioFechamento": {
+              "title": "The horarioFechamento Schema",
+              "type": "string",
+              "default": ""
+            },
+            "qntdMesas": {
+              "title": "The qntdMesas Schema",
+              "type": "integer",
+              "default": 0
+            },
+            "lotacaoAtual": {
+              "title": "The lotacaoAtual Schema",
+              "type": "integer",
+              "default": 0
+            }
+          }
+        },
+        "periodoDe": {
+          "title": "The periodoDe Schema",
+          "type": "string",
+          "default": ""
+        },
+        "periodoAte": {
+          "title": "The periodoAte Schema",
+          "type": "string",
+          "default": ""
+        }
+      }
+    },
+    "usuario": {
+      "title": "The usuario Schema",
+      "type": "object",
+      "default": {},
+      "required": [
+        "id",
+        "nome",
+        "telefone",
+        "email",
+        "cpf"
+      ],
+      "properties": {
+        "id": {
+          "title": "The id Schema",
+          "type": "integer",
+          "default": 0
+        },
+        "nome": {
+          "title": "The nome Schema",
+          "type": "string",
+          "default": ""
+        },
+        "telefone": {
+          "title": "The telefone Schema",
+          "type": "string",
+          "default": ""
+        },
+        "email": {
+          "title": "The email Schema",
+          "type": "string",
+          "default": ""
+        },
+        "cpf": {
+          "title": "The cpf Schema",
+          "type": "string",
+          "default": ""
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "default": {},
+  "required": [
+    "content",
+    "pageable",
+    "totalElements",
+    "totalPages",
+    "last",
+    "size",
+    "number",
+    "sort",
+    "numberOfElements",
+    "first",
+    "empty"
+  ],
+  "properties": {
+    "content": {
+      "default": [],
+      "items": {}
+    },
+    "pageable": {
+      "default": {},
+      "required": [
+        "pageNumber",
+        "pageSize",
+        "sort",
+        "offset",
+        "unpaged",
+        "paged"
+      ],
+      "properties": {
+        "pageNumber": {
+          "default": 0
+        },
+        "pageSize": {
+          "default": 0
+        },
+        "sort": {
+          "default": {},
+          "required": [
+            "empty",
+            "sorted",
+            "unsorted"
+          ],
+          "properties": {
+            "empty": {
+              "default": false
+            },
+            "sorted": {
+              "default": false
+            },
+            "unsorted": {
+              "default": false
+            }
+          }
+        },
+        "offset": {
+          "default": 0
+        },
+        "unpaged": {
+          "default": false
+        },
+        "paged": {
+          "default": false
+        }
+      }
+    },
+    "totalElements": {
+      "default": 0
+    },
+    "totalPages": {
+      "default": 0
+    },
+    "last": {
+      "default": false
+    },
+    "size": {
+      "default": 0
+    },
+    "number": {
+      "default": 0
+    },
+    "sort": {
+      "default": {},
+      "required": [
+        "empty",
+        "sorted",
+        "unsorted"
+      ],
+      "properties": {
+        "empty": {
+          "default": false
+        },
+        "sorted": {
+          "default": false
+        },
+        "unsorted": {
+          "default": false
+        }
+      }
+    },
+    "numberOfElements": {
+      "default": 0
+    },
+    "first": {
+      "default": false
+    },
+    "empty": {
+      "default": false
+    }
+  }
+}
